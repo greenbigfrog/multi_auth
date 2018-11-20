@@ -6,6 +6,7 @@ class MultiAuth::Engine
                      when "facebook" then Provider::Facebook
                      when "vk"       then Provider::Vk
                      when "twitter"  then Provider::Twitter
+                     when "discord"  then Provider::Discord
                      else
                        raise "Provider #{provider} not implemented"
                      end
